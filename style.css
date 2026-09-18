@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(17, 68, 87);
+  transition: width 2s;
+  align-items: center;
+}
+body{
+    background:linear-gradient(#3b0707,#511111);
+    color:#333;
+}
+
+.header{
+    background:#b8158a;
+    color:rgb(0, 0, 0);
+    position:sticky;
+    top:0;
+}
+
+.nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+} 
+
+.nav ul {
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a {
+    color:rgba(124, 13, 188, 0.851);
+    text-decoration:none;
+}
+
+nav a:hover {
+    color:#00c3ff;
+}
+
+section {
+    padding:60px 20px;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #9015b2;
+}
+
+
+
+.hero {
+    text-align:center;
+    background:linear-gradient(#084c61,#082136);
+    color:rgb(0, 0, 0);
+}
+
+.hero img {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:5px solid white;
+}
+
+.skills-container {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+    margin-top:25px;
+}
+
+.skill {
+    background:#1f2937;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.skill:hover {
+    transform:scale(1.05);
+    background:#00c3ff;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-top:25px;
+}
+
+.gallery img {
+    width:100%;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.gallery img:hover {
+    transform:scale(1.05);
+}
+
+form {
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea {
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button {
+    background:#00c3ff;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+button:hover {
+    background:#008ecf;
+}
+
+footer {
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.socials a {
+    color:rgb(22, 69, 94);
+    margin:10px;
+    text-decoration:none;
+}
+
+@media(max-width:768px) {
+
+nav {
+        flex-direction:column;
+}
+
+ nav ul {
+        flex-direction:column;
+        text-align:center;
+        margin-top:10px;
+}
+
+}
